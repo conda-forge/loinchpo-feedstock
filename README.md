@@ -5,7 +5,7 @@ Home: https://github.com/TheJacksonLaboratory/loinchpo
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simple & Efficient Loinc To HPO for Python
 
