@@ -23,6 +23,7 @@ requirements:
     - click
     - ddt
     - pandas
+    - setuptools
 
 test:
   imports:
