@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-    - loinchpo.models
+    - loinchpo.model
     - loinchpo.util
     - loinchpo.errors
     - loinchpo
