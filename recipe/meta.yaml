@@ -28,8 +28,8 @@ requirements:
 test:
   imports:
     - loinchpo.model
-    - loinchpo.util
-    - loinchpo.errors
+    - loinchpo.io
+    - loinchpo.error
     - loinchpo
 
 about:
