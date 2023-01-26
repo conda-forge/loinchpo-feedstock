@@ -1,5 +1,5 @@
 {% set name = "loinchpo" %}
-{% set version = "1.1.2.dev2" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 493ae3c2290dee1e48cd6f9ead71a6ba5220ef2ef5848c3b7665d90bd3b5cc57
+  sha256: 0b172297ab304ca05ad41644cee80fa6ff7ab40caf1b2b76186da2ff6dfdaefa
 
 build:
   noarch: python
