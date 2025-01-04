@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0b172297ab304ca05ad41644cee80fa6ff7ab40caf1b2b76186da2ff6dfdaefa
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - click
     - pandas
     - pyspark
@@ -35,6 +35,7 @@ test:
     - setuptools
     - pandas
     - pyspark
+    - python {{ python_min }}
   commands:
     - pip check
 about:
